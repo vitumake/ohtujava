@@ -1,7 +1,5 @@
 package module1;
 
-import java.util.ArrayList;
-
 public class task2 {
     public static void main(String[] args) {
         
@@ -11,7 +9,7 @@ public class task2 {
         char charN = ' ';
 
         // List of rows to print
-        ArrayList<String> rows =  new ArrayList<>(rowNum);
+        String[] rows =  new String[rowNum];
 
         // Populate rows
         for (int i=0; i < rowNum; i++) {
@@ -25,12 +23,12 @@ public class task2 {
                     row = row + charP;
                 }
             }
-            rows.add(i, row);
+            rows[i] = row;
         }
 
         //Print rows
-        for (int i=rows.size(); i > 0; i-- ) {
-            System.out.println(rows.get(i-1));
+        for (int i=rows.length; i > 0; i-- ) {
+            System.out.println(rows[i-1]);
         }
 
     }
