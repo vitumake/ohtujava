@@ -5,6 +5,7 @@ import java.util.Arrays;
 
 public class task3 {
 
+// I put the numbers into an array and used the stream method of the Array class to run the operations for the numbers.
     
     public static void main(String[] args) {
         
